@@ -1,0 +1,128 @@
+:root {
+    --pink:rgb(251, 179, 191);
+    --lightPink:rgb(255, 219, 225);
+    --lightestPink: rgb(255, 245, 246);
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+}
+
+/* HTML elements */
+
+.headerContainer {
+    margin: 15px;
+    border-radius: 10px;
+    background-color: var(--pink);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    padding: 30px 50px;
+}
+
+.sidebar {
+    width: 250px;
+    /* min-width: 200px; */
+    background-color: var(--lightPink);
+    min-height: 100vh;
+    margin: 0 15px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.button, .projectEntryButtons {
+    margin: 20px 0 10px 0;
+    border: none;
+    background-color: var(--lightPink);
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--pink);
+    border-radius: 5px;
+}
+
+.projectsContainer {
+    padding: 20px 0;
+}
+
+.projects {
+    font-size: 25px;
+    font-weight: 500;
+}
+.body {
+    display: flex;
+}
+.fa-solid {
+    padding-right: 15px;
+}
+
+#content {
+   background-color: var(--lightestPink);
+   width: calc(100vw - 250px);
+   height: 100vh;
+   margin: 0 15px 0 0;
+    padding: 5px 20px 5px 0;
+    border-radius: 10px;
+}
+
+/* js elements */
+.header{
+    font-size: 25px;
+    padding:30px 40px;
+}
+
+/* Input field */
+
+.inputField {
+    padding: 10px 90px 10px 10px;
+    margin: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--lightestPink);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.inputField:focus {
+    outline: 2px solid var(--pink);
+    outline-offset: -2px;
+}
+
+.inputButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0;
+}
+ .inputButtons {
+    border: none;
+    background-color: var(--lightPink);
+    display: flex;
+ }
+
+ .inputButtons:hover {
+    cursor: pointer;
+    border-radius: 50%;
+ }
+
+#addProject {
+    padding-top: 10px;
+}
+
+#addProjectButton {
+    margin-top: 5px;
+    font-weight: 500;
+}

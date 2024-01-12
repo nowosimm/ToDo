@@ -1,8 +1,12 @@
 import makeInput from "../components/makeInput";
 
-export default function project() {
-    var inputContainer = document.getElementById("addProject")
+export default function project(projects) {
+    var inputContainer = document.getElementById("addProject");
+    var addProjectButton = document.getElementById("addProjectButton");
+    addProjectButton.style = "display: none";
 
-    var projectInput = makeInput();
+    console.log(projects)
+
+    var projectInput = makeInput(projects);
     inputContainer.appendChild(projectInput);
 };
